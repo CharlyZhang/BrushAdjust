@@ -1,25 +1,215 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="208-P0-MHB">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="5em-mN-VVr">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="Si0-FH-ERo" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="qZG-dc-Zw0"/>
+                        <viewControllerLayoutGuide type="bottom" id="ns0-hQ-mMF"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="xk5-7c-UOw">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <slider opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="360" translatesAutoresizingMaskIntoConstraints="NO" id="PHI-Tb-rCg">
+                                <rect key="frame" x="482" y="738" width="182" height="31"/>
+                                <connections>
+                                    <action selector="adjustProperty:" destination="Si0-FH-ERo" eventType="valueChanged" id="AQ2-os-mfe"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="DWK-Rt-fjZ">
+                                <rect key="frame" x="814" y="733" width="212" height="31"/>
+                                <connections>
+                                    <action selector="adjustProperty:" destination="Si0-FH-ERo" eventType="valueChanged" id="o37-8H-8Cs"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="keE-Ip-N4g">
+                                <rect key="frame" x="154" y="738" width="178" height="31"/>
+                                <connections>
+                                    <action selector="adjustProperty:" destination="Si0-FH-ERo" eventType="valueChanged" id="y7p-cF-eLC"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="C8C-mV-3aD">
+                                <rect key="frame" x="482" y="699" width="182" height="31"/>
+                                <connections>
+                                    <action selector="adjustProperty:" destination="Si0-FH-ERo" eventType="valueChanged" id="kLl-Dq-YV9"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-1" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="JbF-RJ-dBA">
+                                <rect key="frame" x="814" y="665" width="212" height="31"/>
+                                <connections>
+                                    <action selector="adjustProperty:" destination="Si0-FH-ERo" eventType="valueChanged" id="Waq-Ld-huk"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" tag="10" contentMode="scaleToFill" horizontalHuggingPriority="249" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="0.0" maxValue="200" translatesAutoresizingMaskIntoConstraints="NO" id="Zr8-ni-wW3">
+                                <rect key="frame" x="482" y="627" width="330" height="31"/>
+                                <connections>
+                                    <action selector="adjustProperty:" destination="Si0-FH-ERo" eventType="valueChanged" id="88O-pP-Tse"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="sTg-gJ-fUq">
+                                <rect key="frame" x="154" y="627" width="178" height="31"/>
+                                <connections>
+                                    <action selector="adjustProperty:" destination="Si0-FH-ERo" eventType="valueChanged" id="rA2-1P-PP9"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Jeh-Oj-2XU">
+                                <rect key="frame" x="814" y="699" width="212" height="31"/>
+                                <connections>
+                                    <action selector="adjustProperty:" destination="Si0-FH-ERo" eventType="valueChanged" id="pTf-gr-A1f"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-1" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="9qa-lO-F3a">
+                                <rect key="frame" x="482" y="665" width="182" height="31"/>
+                                <connections>
+                                    <action selector="adjustProperty:" destination="Si0-FH-ERo" eventType="valueChanged" id="EDF-Wu-ylg"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-1" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="SzF-sB-t9b">
+                                <rect key="frame" x="154" y="665" width="178" height="31"/>
+                                <connections>
+                                    <action selector="adjustProperty:" destination="Si0-FH-ERo" eventType="valueChanged" id="dRi-Dg-1Xd"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="bSize:0.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZyW-O1-W2f">
+                                <rect key="frame" x="16" y="627" width="132" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="大小:0.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WGk-be-ZdX">
+                                <rect key="frame" x="338" y="627" width="138" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="intentity:0.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xvi-AK-zra">
+                                <rect key="frame" x="16" y="738" width="132" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="angle:0.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UXe-w7-eJW">
+                                <rect key="frame" x="338" y="738" width="138" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="spacing:0.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iq1-nN-j5n">
+                                <rect key="frame" x="670" y="735" width="138" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="jitter:0.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gpW-wi-bef">
+                                <rect key="frame" x="16" y="700" width="132" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="scatter:0.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="je2-e1-tvD">
+                                <rect key="frame" x="338" y="700" width="138" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="bDensity:0.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u4O-a8-0o8">
+                                <rect key="frame" x="670" y="699" width="138" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dangle:0.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbc-8d-TnR">
+                                <rect key="frame" x="16" y="665" width="132" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dweight:0.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAE-7j-Zzp">
+                                <rect key="frame" x="338" y="665" width="138" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dintentity:0.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hDJ-6v-aOT">
+                                <rect key="frame" x="670" y="665" width="138" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grM-CU-Wgv">
+                                <rect key="frame" x="842" y="627" width="157" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="clear">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearButton:" destination="Si0-FH-ERo" eventType="touchUpInside" id="5vq-es-Hl2"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="DxC-6X-tUQ">
+                                <rect key="frame" x="154" y="700" width="178" height="31"/>
+                                <connections>
+                                    <action selector="adjustProperty:" destination="Si0-FH-ERo" eventType="valueChanged" id="Y7c-dI-38G"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="rfs-5A-qlp"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="Dangle" destination="gbc-8d-TnR" id="8iv-T6-UAy"/>
+                        <outlet property="DangleSlider" destination="SzF-sB-t9b" id="ZGG-Ua-0RS"/>
+                        <outlet property="Dintentity" destination="hDJ-6v-aOT" id="XU4-rh-fFr"/>
+                        <outlet property="DintentitySlider" destination="JbF-RJ-dBA" id="lzp-CR-YxL"/>
+                        <outlet property="Dweight" destination="PAE-7j-Zzp" id="kmZ-eF-OTh"/>
+                        <outlet property="DweightSlider" destination="9qa-lO-F3a" id="zE6-Fm-fAx"/>
+                        <outlet property="angle" destination="UXe-w7-eJW" id="6iE-8r-U8r"/>
+                        <outlet property="angleSlider" destination="PHI-Tb-rCg" id="Mnw-2Z-CmL"/>
+                        <outlet property="bDensity" destination="u4O-a8-0o8" id="LKB-La-4ZC"/>
+                        <outlet property="bDensitySlider" destination="Jeh-Oj-2XU" id="OP8-Ls-sOq"/>
+                        <outlet property="bSize" destination="ZyW-O1-W2f" id="UI9-7S-Ss5"/>
+                        <outlet property="bSizeSlider" destination="sTg-gJ-fUq" id="kFv-kQ-MvI"/>
+                        <outlet property="brushSizeSlider" destination="Zr8-ni-wW3" id="NLo-Fs-7Np"/>
+                        <outlet property="intentity" destination="xvi-AK-zra" id="MHE-Ba-a3I"/>
+                        <outlet property="intentitySlider" destination="keE-Ip-N4g" id="bHg-hg-YAI"/>
+                        <outlet property="jitter" destination="gpW-wi-bef" id="583-ix-Bd7"/>
+                        <outlet property="jitterSlider" destination="DxC-6X-tUQ" id="ZMW-D3-3wp"/>
+                        <outlet property="scatter" destination="je2-e1-tvD" id="XvN-9k-XVc"/>
+                        <outlet property="scatterSlider" destination="C8C-mV-3aD" id="3JJ-Vx-1xZ"/>
+                        <outlet property="spacing" destination="Iq1-nN-j5n" id="9yE-uA-RgM"/>
+                        <outlet property="spacingSlider" destination="DWK-Rt-fjZ" id="RFh-Uv-cI9"/>
+                        <outlet property="weight" destination="WGk-be-ZdX" id="T8R-Ls-Qlu"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3PH-Oh-sVG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1278" y="1056"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="XVx-FF-p7l">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="208-P0-MHB" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="c7Q-yO-RQi">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Si0-FH-ERo" kind="relationship" relationship="rootViewController" id="aFM-Zs-ZSz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TGc-IH-BKQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="298" y="1056"/>
         </scene>
     </scenes>
 </document>
